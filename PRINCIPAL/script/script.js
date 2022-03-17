@@ -9,7 +9,7 @@ playerContainers.forEach((container) => {
   container.addEventListener("mouseover", () => {
     const player = container.querySelector("lottie-player");
     const sound = container.querySelector("audio");
-    sound.src = "/PRINCIPAL/src/open.mp3";
+    sound.src = "PRINCIPAL/src/open.mp3";
     sound.playbackRate = 0.5;
     sound.play();
     player.setDirection(1);
@@ -21,7 +21,7 @@ playerContainers.forEach((container) => {
   container.addEventListener("mouseleave", () => {
     const sound = container.querySelector("audio");
     const player = container.querySelector("lottie-player");
-    sound.src = "/PRINCIPAL/src/close.mp3";
+    sound.src = "PRINCIPAL/src/close.mp3";
     sound.playbackRate = 0.8;
     player.setDirection(-1);
     player.play();
