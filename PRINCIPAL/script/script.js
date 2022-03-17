@@ -45,3 +45,4 @@ const bgs2 = document.querySelector("#segundo");
 const bgs3 = document.querySelector("#terceiro");
 const containersoundg = document.querySelectorAll("#soundg");
 
+bgs1.play();
