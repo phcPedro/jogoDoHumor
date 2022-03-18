@@ -21,7 +21,7 @@ playerContainers.forEach((container) => {
   container.addEventListener("mouseleave", () => {
     const sound = container.querySelector("audio");
     const player = container.querySelector("lottie-player");
-    sound.src = "PRINCIPAL/src/close.mp3";
+    sound.src = "./src/close.mp3";
     sound.playbackRate = 0.8;
     player.setDirection(-1);
     player.play();
