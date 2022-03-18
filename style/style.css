@@ -23,7 +23,7 @@ body {
   align-items: center;
 }
 button{
-  background-image:url("./src/arrown.png");
+  background-image:url("/src/arrown.png");
   opacity: 0;
   transition: opacity 20s linear;
   height: 100px;
@@ -50,7 +50,7 @@ button{
 }
 #house{
   display:none;
-  background: url('./src/corredor.png');
+  background: url('/src/corredor.png');
   align-items: center;
   flex-direction: column;
   width: 50%;
