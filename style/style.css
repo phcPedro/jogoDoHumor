@@ -50,7 +50,7 @@ button{
 }
 #house{
   display:none;
-  background: url('./src/corredor.png');
+  background: url('src/arrown.png');
   align-items: center;
   flex-direction: column;
   width: 50%;

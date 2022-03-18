@@ -9,7 +9,7 @@ playerContainers.forEach((container) => {
   container.addEventListener("mouseover", () => {
     const player = container.querySelector("lottie-player");
     const sound = container.querySelector("audio");
-    sound.src = "PRINCIPAL/src/open.mp3";
+    sound.src = "./src/open.mp3";
     sound.playbackRate = 0.5;
     sound.play();
     player.setDirection(1);
