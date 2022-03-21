@@ -79,6 +79,10 @@ lottie-player:hover #entrarB{
 } 
 video{
   display: none;
+  flex-direction: column;
+  width: 50%; 
+  align-items: center;
+
 }
 @keyframes walking{
   0%{
@@ -97,6 +101,5 @@ video{
   }
   100%{
     transform:scale(1);
-    
   }
 }

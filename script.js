@@ -138,7 +138,7 @@ buttonwalking.addEventListener("click", () => {
   contador++;
 }else{
   document.querySelector("#eventos").style.display = "none";
-  final.style.display='block';
+  final.style.display='flex';
   final.play();
   
 }
