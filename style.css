@@ -1,79 +1,114 @@
-html {
-  background: black;
+html,body{
+width: 100%;
+height: 100%;
+background-color: black;
+align-items: center;
+flex-direction: column;
 }
-
-body {
-  display: flex;
-  
-}
-#door {
-  align-items: center;
+body{
+  margin: 0px;
   display: flex;
   flex-direction: column;
-  width: 50%;
-  height: 100%;
-  
-}
-.bordas {
-  color:red;
-  width: 25%;
-  height: 100%;
-  align-content: center;
   align-items: center;
 }
-#entranceDoor{
+#door{
+  display: flex;
+  flex-direction: column;
+  width: 50%; 
+  align-items: center;
+  
+
+}
+#darkHouse{
   display: none;
-  background-image:url("./src/arrown.png");
-  text-align: center;
-  text-decoration: none;
-  width: 100px;
-  height: 100px;
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity 3s linear;
-  transition: all 0.25s;
+  flex-direction: column;
+  width: 50%; 
+  padding: 21%;
+  height:100%;
+  margin:5px auto;
+  align-items: center;
+  background-image: url('./src/corredor.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  animation: zoom 11s;
+  max-width: 100%;
+  overflow: hidden; 
 }
 
 #key{
-  border:none;
-  background-image:url("./src/key.png");
+ background-image: url("./src/key.png");
+ width: 100px;
+ padding: 23px;
+}
+#entrarB{
+  background-image: url("./src/arrown.png");
   width: 100px;
-  height: 50px;
-  transition: all 0.25s;
-  
+  padding: 50px;
+  display: none;
 }
-#key:hover,#entranceDoor:hover{
-  background-color: #9400d3;
-  text-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.4);
-  transform: scale(1.4);
-  transition: all 0.6s;
- 
+#btnAndar{
+  display: none;
+  width: 30px;
+  padding: 27px;
+  background-image: url('./src/walk.png');
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom:15px;
 }
-#door:hover #entranceDoor{
-  opacity: 1;
-  visibility: visible;
+lottie-player:hover #entrarB{
+ opacity: 1;
+ display: block;
 }
-.msg1,.msg2{
-  visibility: hidden;
-  transition: opacity 3s linear;
-  color:red;
-  display:none;
-  text-align: center;
+#eventos{
+ display: none;
+ background:#cccccc; 
+ padding:15px;  
+ top:20px;  
+ left:120px; 
+ width:50%; 
+ float:top; 
 }
-#container{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    align-items: center;
+#speak{
+  display: none;
+  background:#f10606; 
+  padding:15px;  
+  top:20px;  
+  left:120px; 
+  width:50%; 
+  float:left;
+} 
+video{
+  display: none;
 }
-/* #house{
-  display:none;
-  background: url('./src/arrown.png');
-  align-items: center;
-  flex-direction: column;
-  width: 50%;
-  height: 100%;
-} */
+@keyframes walking{
+  0%{
+    transform:scale(1);
+  }
+  100%{
+    transform:scale(1);
+    opacity: 0;
+  }
+}
 
+
+@keyframes zoom {
+  0%{
+    transform:scale(0.1);
+  }
+  100%{
+    transform:scale(1);
+    
+  }
+}
+/* @keyframes eventos {
+  0%{
+    transform:opacity(2);
+  }
+  60%{
+    transform:opacity(1);
+  }
+  100%{
+    transform:opacity(0);
+    
+  }
+} */

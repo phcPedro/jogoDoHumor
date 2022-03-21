@@ -8,28 +8,27 @@
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <link rel="stylesheet" href="./style.css"/>
   </head>
-  
   <audio id="primeiro" src="./src/keySound.mp3" hidden></audio>
-  <audio id="segundo" src="./src/segundary_sound.mp3" hidden></audio>
-  <audio id="terceiro" src="./src/tertiary_sound.mp3" hidden></audio>
-
-  <body>
-    <div id="container">
-     <div class="bordas"> <p class="msg1"></p></div>
-
-     <div id="door">
-     
-       <button id="entranceDoor"></button>
+  <body> 
+    
+    <div id="door">
+      <div id="buttonkey"><button id="key"></button> </div>
        <lottie-player
         src="https://assets2.lottiefiles.com/packages/lf20_z8fp0wj6.json"
         speed="10"
         background="translucide"
+        style="width: 700px; height: 400px;"
        ></lottie-player>
-        <audio id="doorsound" src="./src/open.mp3" hidden></audio>
-      </div>
-
-    <div class="bordas"><button id="key" value ='0'></button><p class="msg2"></p></div>
-    <script src="./script.js"></script>
+       <button id="entrarB"></button>   
+       <audio id="doorsound" src="./src/open.mp3" hidden></audio>
+     </div>  
     
+    <div id="darkHouse">
+      <p id="eventos">Que lugar estranho.</p>
+      <p id="speak">Vá embora!</p>
+      <button id="btnAndar"></button>
+      <video src="./src/final.mp4"></video>
+    </div>
   </body>
+  <script src="./script.js"></script>
 </html>
