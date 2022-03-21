@@ -137,9 +137,12 @@ buttonwalking.addEventListener("click", () => {
   }, 20000);
   contador++;
 }else{
+  document.querySelector("#darkHouse").style.display = "none";
   document.querySelector("#eventos").style.display = "none";
-  final.style.display='flex';
+  document.querySelector("#caixaVideo").style.display='flex';
+  final.style.display='block';
   final.play();
+  
   
 }
 });

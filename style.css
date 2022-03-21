@@ -77,13 +77,20 @@ lottie-player:hover #entrarB{
   width:50%; 
   float:left;
 } 
+#caixaVideo{
+display: none;
+max-width: 100%;
+height: auto;
+align-items: center;
+flex-direction: column;
+}
 video{
   display: none;
-  flex-direction: column;
-  width: 50%; 
-  align-items: center;
+  max-width: 100%;
+  height: auto;
 
 }
+
 @keyframes walking{
   0%{
     transform:scale(1);
